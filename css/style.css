@@ -1,0 +1,123 @@
+body {
+  width: 100vw;
+  height: auto;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+#masthead{
+  width: 100vw;
+  height: auto;
+  padding: 2rem 0;
+}
+
+#main {
+  position: relative;
+  width:50vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#main form {
+  width:40vw;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #DDD;
+  border: solid #BFBFBF 0.1rem;
+  border-radius: 0.2rem;
+}
+
+#main h1 {
+  position: absolute;
+  top: 2%;
+  left: 12%;
+  width:60% ;
+  padding: 0.5rem;
+  background-color:#F5F5F5;
+  color: black;
+  text-align: center;
+  border: solid #BFBFBF 0.1rem;
+  border-radius: 0.2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  width: 100%;
+}
+
+#main form label, input[type=text], textarea {
+  margin: 1rem auto;
+  padding: 0.5rem 0;
+}
+
+#main form label, input[type=text] {
+  width:95%;
+}
+
+#main form textarea{
+  width:100%;
+}
+
+#main form input[type=text], textarea {
+  border: solid #BFBFBF 0.1rem;
+  border-radius: 0.2rem;
+}
+
+#main form input[type=button] {
+  width: 100%; 
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: #6495ED;
+  color: #F5F5F5;
+}
+
+#main .output {
+  text-overflow: clip;
+}
+
+#main .output p {
+  width: 40vw;
+}
+
+
+/* Tablets Screens */
+@media only screen and (min-width: 35rem) {
+
+  #main form {
+    margin:3.1rem auto;
+  }  
+
+  #main form input[type=button] {
+    width: 25%;
+  }
+
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .flex-container > div {
+    width: 50%;
+  }
+}  
+
+/* Desktop Screens */
+@media only screen and (min-width: 40rem) and (max-width: 50rem){
+
+  main {
+    max-width: 50rem;
+  }
+
+  #main form {
+    margin:3rem auto;
+  }  
+} 
